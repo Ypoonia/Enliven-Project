@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth
+}
+
+@layer base {
+  body {
+    @apply font-poppins;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl 2xl:text-6xl  font-bold;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-6xl 2xl:text-6xl font-bold;
+  }
+
+  h3 {
+    @apply text-3xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl 2xl:text-4xl text-center lg:text-start font-bold;
+  }
+
+  span {
+    @apply text-primary;
+  }
+
+  input {
+    @apply lg:min-w-[533px] p-5 text-xl lg:text-2xl bg-transparent border-b cursor-pointer
+}
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #CAFF33;
+  border-radius: 1rem;
+  background-clip: content-box;
+}
